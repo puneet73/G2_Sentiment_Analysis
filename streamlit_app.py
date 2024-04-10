@@ -10,10 +10,11 @@ import random
 import streamlit as st
 import plotly.graph_objects as go
 
-# Load the CSV file
-@st.cache
-def load_data():
-    return pd.read_csv('E:\\G2 project\\sentences_by_category.csv')
+
+# Load the dataset from GitHub
+url = 'https://raw.githubusercontent.com/yourusername/yourrepository/master/dataset.csv'
+df = pd.read_csv(url)
+
 
 # Preprocess the data
 def preprocess_data(df):
