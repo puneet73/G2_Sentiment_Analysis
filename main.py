@@ -21,8 +21,7 @@ nlp = spacy.load('en_core_web_lg')
 # Read data
 df_review = pd.read_excel("E:\\G2 project\\reviews_l_h.xlsx")
 
-# Update column names if necessary
-review_name_col = 'review'  # Modify this if the column name is different in your Excel file
+review_name_col = 'review'  
 
 # Start aspect-based sentiment analysis
 df_review = pd.DataFrame({
