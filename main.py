@@ -92,7 +92,7 @@ for topic_index in range(lda_model.n_components):
 most_used_features = pd.DataFrame({'Topic': topic_names, 'Top Features': top_features_per_topic})
 
 # Layout using Streamlit
-st.title("Aspect-Based Sentiment Analysis")
+st.title("User Reviews Detailed Analysis and Future Predictions")
 
 # 1. Dominant Topic Distribution
 st.header("1. Dominant Topic Distribution")
